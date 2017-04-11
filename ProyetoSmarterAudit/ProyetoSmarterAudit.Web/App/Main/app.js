@@ -30,6 +30,14 @@
                 $urlRouterProvider.otherwise('/users');
             }
 
+            $stateProvider
+                    .state('bancos', {
+                        url: '/bancos',
+                        templateUrl: '/App/Main/views/bancos/Index.cshtml',
+                        menu: 'Bancos' //Matches to name of 'Bancos' menu in ProyetoSmarterAuditNavigationProvider
+                    });
+            //$urlRouterProvider.otherwise('/users');
+
             if (abp.auth.hasPermission('Pages.Tenants')) {
                 $stateProvider
                     .state('tenants', {

@@ -3,6 +3,8 @@ using Abp.Zero.EntityFramework;
 using ProyetoSmarterAudit.Authorization.Roles;
 using ProyetoSmarterAudit.MultiTenancy;
 using ProyetoSmarterAudit.Users;
+using ProyetoSmarterAudit.Auditoria;
+using TaskSystem.Entities;
 using System.Reflection;
 using System.Data.Entity;
 
@@ -11,9 +13,9 @@ namespace ProyetoSmarterAudit.EntityFramework
     public class ProyetoSmarterAuditDbContext : AbpZeroDbContext<Tenant, Role, User> 
     {
         //TODO: Define an IDbSet for your Entities...
-       
-        public virtual IDbSet<CuentaBancaria> Cuenta { get; set; }
-        public virtual IDbSet<Auditoria> Auditoria { get; set; }
+
+        public virtual IDbSet<cCuentaBancaria> Cuenta { get; set; }
+        public virtual IDbSet<cAuditoria> Auditoria { get; set; }
 
 
         //public override int SaveChanges()

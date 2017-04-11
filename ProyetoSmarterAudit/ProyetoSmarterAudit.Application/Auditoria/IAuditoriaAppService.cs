@@ -9,7 +9,7 @@ using ProyetoSmarterAudit.Auditoria.Dto;
 
 namespace ProyetoSmarterAudit.Auditoria
 {
-    interface IAuditoriaAppService : IApplicationService
+    public interface IAuditoriaAppService : IApplicationService
     {
         //Task Create(CreateAuditoriaInput input);
 

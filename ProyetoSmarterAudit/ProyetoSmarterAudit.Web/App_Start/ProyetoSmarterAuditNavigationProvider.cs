@@ -46,6 +46,14 @@ namespace ProyetoSmarterAudit.Web
                         url: "#/about",
                         icon: "fa fa-info"
                         )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "Bancos",
+                        L("Bancos"),
+                        url: "#bancos",
+                        icon: "fa fa-users"
+                        )
+                
                 );
         }
 

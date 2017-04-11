@@ -18,7 +18,7 @@
     <text name="Password" value="Contraseña" />
     <text name="RememberMe" value="Recuérdame" />
     <text name="LogIn" value="Iniciar sesión" />
-
+    <text name="Banco" value="Descripción para bancos" />
     <text name="LoginFailed" value="¡Error de inicio de sesion!" />
 
     <text name="NameSurname" value="Nombre Apellido" />

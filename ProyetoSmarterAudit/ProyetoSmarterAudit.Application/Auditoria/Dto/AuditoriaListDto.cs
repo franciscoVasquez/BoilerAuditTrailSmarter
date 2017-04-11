@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,12 +11,9 @@ using System.Threading.Tasks;
 namespace ProyetoSmarterAudit.Auditoria.Dto
 {
 
-        [Table("Auditoria")]
+        [AutoMapFrom(typeof(cAuditoria))]
         public class AuditoriaListDto: EntityDto<long>
         {
-            [Key]
-            public long ID_AUDIT { get; set; }
-
             [Required]
             [MaxLength(100)]
             public string UserID { get; set; }

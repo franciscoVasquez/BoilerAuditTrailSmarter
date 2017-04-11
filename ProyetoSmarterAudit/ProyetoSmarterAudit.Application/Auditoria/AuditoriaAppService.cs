@@ -10,13 +10,13 @@ using Abp.Domain.Repositories;
 namespace ProyetoSmarterAudit.Auditoria
 {
 
-    public class AuditoriaAppService: IAuditoriaAppService
-    {
-        private readonly IRepository<User, long> _userRepository;
-        public async Task<ListResultDto<AuditoriaListDto>>(AuditoriaListDto input)
-        {
+    //public class AuditoriaAppService: IAuditoriaAppService
+    //{
+    //    private readonly IRepository<User, long> _userRepository;
+    //    public ListResultDto<AuditoriaListDto> GetAuditList()
+    //    {
             
             
-        }
-    }
+    //    }
+    //}
 }
