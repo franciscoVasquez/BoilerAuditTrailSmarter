@@ -10,6 +10,7 @@ using TaskSystem.Repository;
 using TaskSystem.Entities;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using ProyetoSmarterAudit.Auditoria;
 
 namespace ProyetoSmarterAudit.Bancos
 {
@@ -30,6 +31,20 @@ namespace ProyetoSmarterAudit.Bancos
                     cuentas.MapTo<List<CuentaListDto>>()
                     );
         }
+
+        public void CreateCuenta(CreateCuentaInput input)
+        {
+            Logger.Info("Creando una cuenta de:" + input);
+            var cuenta = input.MapTo<cCuentaBancaria>();
+            
+            cuenta.Banco = input.NombreBanco;
+            cuenta.NroCuenta = input.NroCuenta;
+            cuenta.TipoCuenta = input.TipoCuenta;
+
+            _ctaRepository.Insert(cuenta);
+        }
+
+
     }
 
 

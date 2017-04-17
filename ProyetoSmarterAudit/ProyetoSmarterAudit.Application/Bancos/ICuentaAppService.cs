@@ -14,5 +14,6 @@ namespace ProyetoSmarterAudit.Bancos
     public interface ICuentaAppService : IApplicationService
     {
         Task<ListResultDto<CuentaListDto>> GetListCuenta();
+        void CreateCuenta(CreateCuentaInput input);
     }
 }

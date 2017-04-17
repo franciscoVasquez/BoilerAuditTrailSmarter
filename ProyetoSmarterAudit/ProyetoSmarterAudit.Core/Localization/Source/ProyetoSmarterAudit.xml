@@ -20,11 +20,13 @@
     <text name="Password" value="Password" />
     <text name="RememberMe" value="Remember me" />
     <text name="LogIn" value="Log in" />
-    <text name="Bancos" value="Bancos"/>
+    <text name="Bancos" value="Banco"/>
     <text name="NroCuenta" value="Número de Cuenta"/>
     <text name="Banco" value="Nombre del Banco"/>
     <text name="TipoCuenta" value="Tipo de Cuenta"/>
     <text name="LoginFailed" value="Login failed!" />
+    <text name="CrearCuenta" value="Crear Cuenta Bancaria"/>
+    
 
     <text name="NameSurname" value="Name surname" />
     <text name="UserName" value="User name" />

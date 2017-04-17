@@ -1,0 +1,33 @@
+﻿@using Abp.Authorization.Users
+
+    <div ng-controller="app.views.banco.ModalView as vm">
+        <form name="cuentaCreateForm" role="form" novalidate class="form-validation">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CrearCuenta")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label>@L("NroCuenta")</label>
+                    <input class="form-control" type="text" name="NroCuenta" ng-model="vm.bancos.NroCuenta">
+                </div>
+
+                <div class="form-group">
+                    <label>@L("Banco")</label>
+                    <input type="text" name="NombreBanco" class="form-control" ng-model="vm.bancos.NombreBanco">
+                </div>
+
+                <div class="form-group">
+                    <label>@L("TipoCuenta")</label>
+                    <input type="text" name="TipoCuenta" class="form-control" ng-model="vm.bancos.TipoCuenta">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+                <button type="submit" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="cuentaCreateForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+            </div>
+        </form>
+    </div>

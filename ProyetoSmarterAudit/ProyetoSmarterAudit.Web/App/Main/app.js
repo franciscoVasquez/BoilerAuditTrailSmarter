@@ -33,7 +33,7 @@
             $stateProvider
                     .state('bancos', {
                         url: '/bancos',
-                        templateUrl: '/App/Main/views/bancos/Index.cshtml',
+                        templateUrl: '/App/Main/views/bancos/ModalView.cshtml',
                         menu: 'Bancos' //Matches to name of 'Bancos' menu in ProyetoSmarterAuditNavigationProvider
                     });
             //$urlRouterProvider.otherwise('/users');

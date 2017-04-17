@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyetoSmarterAudit.Auditoria
 {
-    public class cAuditoria: Entity<long>
+    public class TblAuditoria: Entity<long>
     {
             public virtual string _UserID { get; set; }
             public virtual DateTime _FechaCambio { get; set; }
@@ -17,12 +17,12 @@ namespace ProyetoSmarterAudit.Auditoria
             public virtual string _ValorAnterior { get; set; }
             public virtual string _ValorActual { get; set; }
 
-            public cAuditoria()
+            public TblAuditoria()
             {
                 _FechaCambio = DateTime.Now;
             }
 
-        public cAuditoria CreateAuditoria(string UserID,
+        public TblAuditoria CreateAuditoria(string UserID,
             DateTime FechaCambio,
             string NombreTabla,
             string TipoEvento,
@@ -30,7 +30,7 @@ namespace ProyetoSmarterAudit.Auditoria
             string ValorAnterior,
             string ValorActual)
             {
-            return new cAuditoria
+            return new TblAuditoria
             {
                 _UserID = UserID,
                 _FechaCambio = FechaCambio,

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace ProyetoSmarterAudit.Auditoria.Dto
 {
 
-        [AutoMapFrom(typeof(cAuditoria))]
+        [AutoMapFrom(typeof(TblAuditoria))]
         public class AuditoriaListDto: EntityDto<long>
         {
             [Required]

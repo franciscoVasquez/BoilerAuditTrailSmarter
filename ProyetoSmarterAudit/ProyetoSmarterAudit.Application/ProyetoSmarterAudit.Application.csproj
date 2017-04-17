@@ -126,6 +126,7 @@
     <Compile Include="Auditoria\Dto\AuditoriaListDto.cs" />
     <Compile Include="Auditoria\IAuditoriaAppService.cs" />
     <Compile Include="Bancos\CuentaAppService.cs" />
+    <Compile Include="Bancos\Dto\CreateCuentaInput.cs" />
     <Compile Include="Bancos\Dto\CuentaListDto.cs" />
     <Compile Include="Bancos\ICuentaAppService.cs" />
     <Compile Include="ProyetoSmarterAuditApplicationModule.cs" />

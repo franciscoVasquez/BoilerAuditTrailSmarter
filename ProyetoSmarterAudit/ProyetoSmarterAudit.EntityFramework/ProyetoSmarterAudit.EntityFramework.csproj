@@ -129,7 +129,9 @@
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +152,14 @@
     <Compile Include="Migrations\201704110217042_Second-create.cs" />
     <Compile Include="Migrations\201704110217042_Second-create.Designer.cs">
       <DependentUpon>201704110217042_Second-create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704121607571_Initial.cs" />
+    <Compile Include="Migrations\201704121607571_Initial.Designer.cs">
+      <DependentUpon>201704121607571_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704121615556_Initial1.cs" />
+    <Compile Include="Migrations\201704121615556_Initial1.Designer.cs">
+      <DependentUpon>201704121615556_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -182,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704110217042_Second-create.resx">
       <DependentUpon>201704110217042_Second-create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704121607571_Initial.resx">
+      <DependentUpon>201704121607571_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704121615556_Initial1.resx">
+      <DependentUpon>201704121615556_Initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

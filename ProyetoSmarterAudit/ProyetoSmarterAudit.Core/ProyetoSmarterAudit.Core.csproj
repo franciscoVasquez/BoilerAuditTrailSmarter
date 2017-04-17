@@ -113,6 +113,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auditoria\AuditAttribute.cs" />
     <Compile Include="Auditoria\Auditoria.cs" />
     <Compile Include="Auditoria\AuditoriaManager.cs" />
     <Compile Include="CuentaBancaria\CuentaBancaria.cs" />

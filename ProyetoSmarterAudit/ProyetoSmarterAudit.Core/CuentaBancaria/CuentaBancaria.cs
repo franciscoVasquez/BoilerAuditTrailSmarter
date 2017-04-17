@@ -1,13 +1,9 @@
 ﻿using Abp.Domain.Entities;
-using Abp.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ProyetoSmarterAudit.Auditoria;
 
 namespace TaskSystem.Entities
 {
+    
     public class cCuentaBancaria : Entity
     {
         public virtual string NroCuenta { get; set; }
